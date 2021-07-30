@@ -33,9 +33,16 @@ html {
 #page-text {
     font-size: calc(16px + 0.85vw);
     font-family: 'Exo 2', sans-serif;
+    white-space: nowrap;
 }
 .georama-font {
     font-family: 'Georama', sans-serif;
+}
+.gitrepolink {
+    color: #93AD1D;
+}
+.pagelink {
+    color: #8C7FB3;
 }
 
 /* Materialize Styling Changes */
@@ -57,7 +64,7 @@ html {
     background-color: #ea83fc;
 }
 .card .card-reveal {
-    background-color: hsl(261, 75%, 75%);
+    background-color: #B743FA;
 }
 @media only screen and (min-width: 993px) {
     nav a.sidenav-trigger {
