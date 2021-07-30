@@ -4,6 +4,7 @@
 html {
     overflow:   auto;
     background-color: #fffde7;
+    font-family: 'Georama', sans-serif;
 }
 ::-webkit-scrollbar {
     width: 0px;
