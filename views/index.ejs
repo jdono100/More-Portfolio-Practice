@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Donovan</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Georama&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/a7b215c748.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="purple darken-3">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="page-indicator">
+                            <div class="container left-align col s8">
+                                <a href="/">
+                                    <h5 id="page-text" class="georama-font">Jared Donovan's Portfolio</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <div class="container right-align col s4">
+                                <a href="https://github.com/jdono100" class="link"><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/jared-donovan/" class="link"><i
+                                        class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/jaredonovan" class="link"><i class="fab fa-twitter fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main style="background-color: #fffde7;">
+        <div class="container">
+            <div class="row center topText">
+                <h2 class="georama-font">Jared Donovan</h2>
+                <h4 class="flow-text georama-font">is a Full-Stack Web Development student at Northwestern University</h4>
+                <img src="./assets/images/headshot.png" alt="Jared Donovan profile picture" class="circle responsive-img" id="headshotimg">
+            </div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="row portfolio">
+                <h3 class="flow-text georama-font center-align">Here are some of my past projects, click the 3 dots to view more about one!</h3>
+                <div class="projectsDiv">
+                    <div class="row">
+                        <div class="card col s12 m6">
+                            <div class="card-image center">
+                                <div class="carousel carouselone">
+                                    <a class="carousel-item"><img src="./assets/images/price-tracker-ss1.png" class="responsive-img" alt="TCG Price Tracker screencap 1"></a>
+                                    <a class="carousel-item"><img src="./assets/images/price-tracker-ss2.png" class="responsive-img" alt="TCG Price Tracker screencap 2"></a>
+                                    <a class="carousel-item"><img src="./assets/images/price-tracker-ss3.png" class="responsive-img" alt="TCG Price Tracker screencap 3"></a>
+                                    <a class="carousel-item"><img src="./assets/images/price-tracker-ss4.png" class="responsive-img" alt="TCG Price Tracker screencap 4"></a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator">Pokémon TCG Price Tracker<i class="material-icons right">more_vert</i></span>
+                                <p><a target="_blank" href="https://project01-tcg-price-tracker.github.io/TCG_Price_Tracker/" class="purple-text text-darken-4">Deployed app on Github Pages</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title">Pokémon TCG Price Tracker<i class="material-icons right">close</i></span>
+                                <p>Our first big project was a price tracker that searches Pokémon trading cards and keeps track of their price.</p>
+                                <p>My role was the front-end lead but I helped write the back-end for the individual card page and other places.</p>
+                                <p>It features a favorites list using local storage, and clicking on a card's art after you search it brings up an individual card page that can be shared.</p>
+                                <p>There is also a cryptocurrency conversion that converts the price of the card in USD to a selection of popular cryptocurrencies.</p>
+                                <p><a href="https://github.com/Project01-TCG-Price-Tracker/TCG_Price_Tracker" target="_blank">Github Repo</a></p>
+                            </div>
+                        </div>
+                        <div class="card col s12 m6">
+                            <div class="card-image center">
+                                <div class="carousel carouseltwo">
+                                    <a class="carousel-item"><img src="./assets/images/Calendae-login.png" alt="weather dashboard screencap 1" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/Calendae-signup.png" alt="weather dashboard screencap 1" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/Calendae-weekview.png" alt="weather dashboard screencap 1" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/Calendae-dayview.png" alt="weather dashboard screencap 1" class="responsive-img"></a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator">Calendae<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://tjj-calendae.herokuapp.com/" target="_blank" class="purple-text text-darken-4">Deployed app on Heroku</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title">Calendae<i class="material-icons right">close</i></span>
+                                <p>This project is a simple social media app that saves user data and users can add events to a calendar to plan out events with friends.</p>
+                                <p>It does not use an external JavaScript library to make the calendar and append events to it, I wrote a vanilla JavaScript function to handle that. I was also responsible for most of the front-end styling.</p>
+                                <p>The app was made using JavaScript; Express for the server; Express-sessions, dotenv & bcrypt for storing user data securely, Handlebars as the templating language, and MySQL and Sequelize for database software.</p>
+                                <p><a href="https://github.com/JTJ-Calendae/Calendae" target="_blank">Github Repo</a></p>
+                            </div>
+                        </div>
+                        <div class="card col s12 m6">
+                            <div class="card-image center">
+                                <div class="carousel carouselthree">
+                                    <a class="carousel-item"><img src="./assets/images/screenshot-jd-tech-talk1.png" alt="Coding Quiz screencap 1" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/screenshot-jd-tech-talk2.png" alt="Coding Quiz screencap 2" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/screenshot-jd-tech-talk3.png" alt="Coding Quiz screencap 3" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/screenshot-jd-tech-talk4.png" alt="Coding Quiz screencap 4" class="responsive-img"></a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator">Tech Talk<i class="material-icons right">more_vert</i></span>
+                                <p><a href="https://jd-tech-talk.herokuapp.com/" target="_blank" class="purple-text text-darken-4">Deployed app on Heroku</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title">Tech Talk/MVC Tech Blog<i class="material-icons right">close</i></span>
+                                <p>A basic tech blog that developers can use to share technology/programming news or posts and can comment on other user's posts.</p>
+                                <p>The app also allows users to edit or delete posts they've made, and has authentication to make sure users can't delete or edit other user's posts</p>
+                                <p>It is built using the Model View Controller paradigm (MVC) and was built using JavaScript, Express.js, Handlebars.js, and MySQL/Sequelize.</p>
+                                <p><a href="https://github.com/jdono100/MVC_Tech-Blog" target="_blank">Github Repo</a></p>
+                            </div>
+                        </div>
+                        <div class="card col s12 m6">
+                            <div class="card-image center">
+                                <div class="carousel carouselfour">
+                                    <a class="carousel-item"><img src="./assets/images/sc-notes-app1.png" alt="Day Planner screencap 1" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/sc-notes-app2.png" alt="Day Planner screencap 2" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/sc-notes-app3.png" alt="Day Planner screencap 3" class="responsive-img"></a>
+                                    <a class="carousel-item"><img src="./assets/images/sc-notes-app4.png" alt="Day Planner screencap 4" class="responsive-img"></a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator">Note Taker App<i class="material-icons right">more_vert</i></span>
+                                <p><a target="_blank" href="https://secret-everglades-66954.herokuapp.com/" class="purple-text text-darken-4">Deployed app on Heroku</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title">Notes App<i class="material-icons right">close</i></span>
+                                <p>This application is an Express note-taking app that saves notes in a database for later use.</p>
+                                <p>Users can save and delete notes, and the notes will stay on the website as long as Heroku's servers are running.</p>
+                                <p>This application was only a code refactor of some boilerplate code that was completed as a homework assignment, but still demonstrates thorough understanding of Express & MySQL.</p>
+                                <p><a href="https://github.com/jdono100/Notes-App">Github Repo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row aboutMe">
+                <div class="col s12 right-align">
+                    <h3 class="flow-text"><i class="left fas fa-laptop-code"></i>Lifelong passion for computer science & technology with a specialty in front-end design</h3>
+                    <h3 class="flow-text"><i class="left fas fa-city"></i>from Chicago, Illinois</h3>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row resumeDL">
+                <a href="/assets/pdf/jared-donovan-resume2021.pdf" download="Jared_Donovan_resume"><h3 class="flow-text center-align"><i class="fas fa-file-download"></i> Download My Resume <i class="fas fa-file-download"></i></h3></a>
+            </div>
+            <div class="divider"></div>
+            <div class="row contact">
+                <h3 class="flow-text">Want to contact me?</h3>
+                <div class="col s12 left-align contactItems">
+                    <p>
+                        <a href="mailto: jareddonovan2021@u.northwestern.edu">jareddonovan2021@u.northwestern.edu</a> or <a href="mailto: jdono100@gmail.com">jdono100@gmail.com</a>
+                        <i class="right material-icons">email</i>
+                    </p>
+                    <p>
+                        <a href="tel:815-315-3513">(815) 315-3513</a>
+                        <i class="right material-icons">phone_iphone</i>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/jared-donovan/">www.linkedin.com/in/jared-donovan/</a>
+                        <i class="right fab fa-linkedin fa-2x"></i>
+                    </p>
+                    <p>
+                        <a href="https://github.com/jdono100">github.com/jdono100</a>
+                        <i class="right fab fa-github fa-2x"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="divider bottomDivider"></div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/assets/js/portfolioFunction.js"></script>
+</body>
+
+</html>
